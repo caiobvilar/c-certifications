@@ -6,6 +6,10 @@
     "dockerfile": "../builder.Dockerfile"
   },
   "runArgs": ["--platform=linux/amd64"],
+  "containerEnv": {
+		"LINUX_HOST_USER": "${localEnv:USER}",
+		"USE_HOST_USER": "true"
+	},
   "customizations": {
     "vscode": {
       "settings": {

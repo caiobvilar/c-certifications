@@ -4,6 +4,10 @@ ARG base_img=mcr.microsoft.com/vscode/devcontainers/base:dev-${base_tag}
 
 FROM --platform=linux/amd64 ${base_img} AS builder-install
 
+
+
+
+
 # the following shows how to install the latest version of a package.
 # you can determine the installed version with `apt-cache policy <list of packages>` and fix
 # the version to install with <package>=<version> in the list below.
@@ -28,7 +32,7 @@ ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 RUN echo 'en_US.UTF-8 UTF-8' > /etc/locale.gen
 RUN /usr/sbin/locale-gen
-RUN echo "alias ll='ls -laGFh'" >> /root/.bashrc
+RUN echo "alias ll='ls -laGFh'" >> ~/.bashrc
 
 VOLUME ["/builder/mnt"]
 WORKDIR /builder/mnt

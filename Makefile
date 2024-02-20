@@ -1,4 +1,4 @@
-project_name=c-projects-template
+project_name=c-certification
 builder-build:
 	docker build -f builder.Dockerfile -t $(project_name)-builder:latest .
 
