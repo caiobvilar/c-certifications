@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.18)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(
-    Dummy
+    C-Certificate
     VERSION 0.1
-    DESCRIPTION "Dummy - A dummy library"
+    DESCRIPTION "CLP Certification"
     LANGUAGES C
     )
 
@@ -15,11 +15,17 @@ set_property(
 
 add_library(
     ${PROJECT_NAME}
-    src/dummy.c
+    src/C1/src/c1-1.c
 )
 
 target_include_directories(
     ${PROJECT_NAME}
     PUBLIC
     include
+    include/lab1-1
+)
+
+add_executable(
+    "lab1"
+    src/C1/src/c1-1.c
 )

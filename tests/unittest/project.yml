@@ -30,7 +30,7 @@
     - -:support
     - -:generated
   :source:
-    - ../../src/**
+    - ../../src/C1/src/**
     - ../../include
   :support:
     - support
@@ -78,7 +78,7 @@
     :report_root: "../../"
   :reports:
     - HtmlDetailed
-  :report_include: "^../../src/.*"
+  :report_include: "^../../src/C1/.*"
   :report_exclude: "^vendor.*|^build.*|^test.*|^lib.*|^.*_build.*"
 
 #:tools:

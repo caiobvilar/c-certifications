@@ -1,7 +1,12 @@
 [
 {
   "directory": "/workspaces/c-certifications/build",
-  "command": "/usr/bin/gcc  -I/workspaces/c-certifications/include -g -o CMakeFiles/Dummy.dir/src/dummy.c.o -c /workspaces/c-certifications/src/dummy.c",
-  "file": "/workspaces/c-certifications/src/dummy.c"
+  "command": "/usr/bin/gcc   -O3 -DNDEBUG -o CMakeFiles/lab1.dir/src/C1/src/c1-1.c.o -c /workspaces/c-certifications/src/C1/src/c1-1.c",
+  "file": "/workspaces/c-certifications/src/C1/src/c1-1.c"
+},
+{
+  "directory": "/workspaces/c-certifications/build",
+  "command": "/usr/bin/gcc  -I/workspaces/c-certifications/include -I/workspaces/c-certifications/include/lab1-1 -O3 -DNDEBUG -o CMakeFiles/C-Certificate.dir/src/C1/src/c1-1.c.o -c /workspaces/c-certifications/src/C1/src/c1-1.c",
+  "file": "/workspaces/c-certifications/src/C1/src/c1-1.c"
 }
 ]

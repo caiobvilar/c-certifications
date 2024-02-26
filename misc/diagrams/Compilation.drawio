@@ -1,0 +1,54 @@
+<mxfile host="Electron" modified="2024-02-20T17:49:30.702Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="FhacYjmGimipmSqVbF1n" version="22.1.16" type="device">
+  <diagram name="Page-1" id="GNt2Ri1ndIB1PV6YxB7j">
+    <mxGraphModel dx="2832" dy="1718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-24" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="130" y="590" width="580" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry x="220" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-8" value="" style="group" vertex="1" connectable="0" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry x="235" y="23" width="84" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-4" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-8">
+          <mxGeometry y="23" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-5" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-8">
+          <mxGeometry x="29" y="17" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-6" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-8">
+          <mxGeometry x="54" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-14" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry x="430" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" edge="1" parent="gsesg9wLPKOnMRFbFdnM-24" source="gsesg9wLPKOnMRFbFdnM-3" target="gsesg9wLPKOnMRFbFdnM-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-15" value="Hello/Hello.exe" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry x="430" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-16" value="01110110 01001101111 01101001 0101100100  0100000 10001101101  1100001 01101101001  01101110 0010100010" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;whiteSpace=wrap;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry x="430" y="30" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" edge="1" parent="gsesg9wLPKOnMRFbFdnM-24" source="gsesg9wLPKOnMRFbFdnM-21" target="gsesg9wLPKOnMRFbFdnM-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="50.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-21" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-20" value="void main()&lt;br&gt;{&lt;br&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; printf(&quot;Hello, world!&quot;);&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; return 0;&lt;/div&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry y="30" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gsesg9wLPKOnMRFbFdnM-22" value="Hello/Hello.exe" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="gsesg9wLPKOnMRFbFdnM-24">
+          <mxGeometry width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
