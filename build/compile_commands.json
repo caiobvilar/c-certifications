@@ -1,8 +1,13 @@
 [
 {
   "directory": "/workspaces/c-certifications/build",
-  "command": "/usr/bin/gcc   -O3 -DNDEBUG -o CMakeFiles/lab1.dir/src/C1/src/c1-1.c.o -c /workspaces/c-certifications/src/C1/src/c1-1.c",
+  "command": "/usr/bin/gcc   -O3 -DNDEBUG -o CMakeFiles/lab1-1.dir/src/C1/src/c1-1.c.o -c /workspaces/c-certifications/src/C1/src/c1-1.c",
   "file": "/workspaces/c-certifications/src/C1/src/c1-1.c"
+},
+{
+  "directory": "/workspaces/c-certifications/build",
+  "command": "/usr/bin/gcc   -O3 -DNDEBUG -o CMakeFiles/lab1-2.dir/src/C1/src/c1-2.c.o -c /workspaces/c-certifications/src/C1/src/c1-2.c",
+  "file": "/workspaces/c-certifications/src/C1/src/c1-2.c"
 },
 {
   "directory": "/workspaces/c-certifications/build",

@@ -63,16 +63,18 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/nuttx-ddrivers
+CMAKE_SOURCE_DIR = /workspaces/c-certifications
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/nuttx-ddrivers/build
+CMAKE_BINARY_DIR = /workspaces/c-certifications/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Dummy.dir/all
+all: CMakeFiles/lab1-1.dir/all
+all: CMakeFiles/lab1-2.dir/all
+all: CMakeFiles/C-Certificate.dir/all
 
 .PHONY : all
 
@@ -82,36 +84,92 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Dummy.dir/clean
+clean: CMakeFiles/lab1-1.dir/clean
+clean: CMakeFiles/lab1-2.dir/clean
+clean: CMakeFiles/C-Certificate.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Dummy.dir
+# Target rules for target CMakeFiles/lab1-1.dir
 
 # All Build rule for target.
-CMakeFiles/Dummy.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dummy.dir/build.make CMakeFiles/Dummy.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dummy.dir/build.make CMakeFiles/Dummy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/nuttx-ddrivers/build/CMakeFiles --progress-num=1,2 "Built target Dummy"
-.PHONY : CMakeFiles/Dummy.dir/all
+CMakeFiles/lab1-1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-1.dir/build.make CMakeFiles/lab1-1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-1.dir/build.make CMakeFiles/lab1-1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/c-certifications/build/CMakeFiles --progress-num=3,4 "Built target lab1-1"
+.PHONY : CMakeFiles/lab1-1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Dummy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/nuttx-ddrivers/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Dummy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/nuttx-ddrivers/build/CMakeFiles 0
-.PHONY : CMakeFiles/Dummy.dir/rule
+CMakeFiles/lab1-1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-certifications/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab1-1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-certifications/build/CMakeFiles 0
+.PHONY : CMakeFiles/lab1-1.dir/rule
 
 # Convenience name for target.
-Dummy: CMakeFiles/Dummy.dir/rule
+lab1-1: CMakeFiles/lab1-1.dir/rule
 
-.PHONY : Dummy
+.PHONY : lab1-1
 
 # clean rule for target.
-CMakeFiles/Dummy.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dummy.dir/build.make CMakeFiles/Dummy.dir/clean
-.PHONY : CMakeFiles/Dummy.dir/clean
+CMakeFiles/lab1-1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-1.dir/build.make CMakeFiles/lab1-1.dir/clean
+.PHONY : CMakeFiles/lab1-1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lab1-2.dir
+
+# All Build rule for target.
+CMakeFiles/lab1-2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-2.dir/build.make CMakeFiles/lab1-2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-2.dir/build.make CMakeFiles/lab1-2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/c-certifications/build/CMakeFiles --progress-num=5,6 "Built target lab1-2"
+.PHONY : CMakeFiles/lab1-2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lab1-2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-certifications/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab1-2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-certifications/build/CMakeFiles 0
+.PHONY : CMakeFiles/lab1-2.dir/rule
+
+# Convenience name for target.
+lab1-2: CMakeFiles/lab1-2.dir/rule
+
+.PHONY : lab1-2
+
+# clean rule for target.
+CMakeFiles/lab1-2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-2.dir/build.make CMakeFiles/lab1-2.dir/clean
+.PHONY : CMakeFiles/lab1-2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/C-Certificate.dir
+
+# All Build rule for target.
+CMakeFiles/C-Certificate.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C-Certificate.dir/build.make CMakeFiles/C-Certificate.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C-Certificate.dir/build.make CMakeFiles/C-Certificate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/c-certifications/build/CMakeFiles --progress-num=1,2 "Built target C-Certificate"
+.PHONY : CMakeFiles/C-Certificate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/C-Certificate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-certifications/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/C-Certificate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/c-certifications/build/CMakeFiles 0
+.PHONY : CMakeFiles/C-Certificate.dir/rule
+
+# Convenience name for target.
+C-Certificate: CMakeFiles/C-Certificate.dir/rule
+
+.PHONY : C-Certificate
+
+# clean rule for target.
+CMakeFiles/C-Certificate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C-Certificate.dir/build.make CMakeFiles/C-Certificate.dir/clean
+.PHONY : CMakeFiles/C-Certificate.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

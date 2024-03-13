@@ -26,6 +26,10 @@ target_include_directories(
 )
 
 add_executable(
-    "lab1"
+    "lab1-1"
     src/C1/src/c1-1.c
+)
+add_executable(
+    "lab1-2"
+    src/C1/src/c1-2.c
 )

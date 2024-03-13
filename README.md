@@ -1,6 +1,6 @@
 # EDUBE C Programming Language Professional Certificate
 
-
+![Alt](https://repobeats.axiom.co/api/embed/c613bf726b2ddfd69e68b9a5606676b0dc0acfd3.svg "Repobeats analytics image")
 
 ## C Essentials - Part 1 (Basics)
 
@@ -164,7 +164,27 @@ Write your first program in the "C" language. Just print your name 3 times. Reme
 
 [C1-1.c](/src/C1/src/c1-1.c)
 
+#### LAB 1.2 - Just Numbers - Part 1
 
+##### Level of difficulty
+
+Easy
+##### Objectives
+
+Familiarize the student with:
+* Fixing errors in a program
+* Integer numbers
+* Printing on screen
+
+##### Scenario
+
+Find all possible compilation errors and logic errors. Fix them.
+
+Your version of the program must print the same result as the expected output. Before you use the compiler, try to find the errors only by manual code analysis.
+
+##### Expected output
+
+`The value of five is: 5`
 
 ### Module 2
 
