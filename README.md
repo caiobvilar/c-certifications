@@ -186,7 +186,128 @@ Your version of the program must print the same result as the expected output. B
 
 `The value of five is: 5`
 
+##### Solution
+
+[C1-1.c](/src/C1/src/c1-2.c)
+
+#### Numbers and how the computers see them
+
+<div style="text-align: justify">
+
+The numbers handled by modern computers are of two types:
+
+* `integers (int)`: those which are devoid of a fractional part;
+* `floating-point (float)`: also known as `floats`, are numbers that contain a fractional part.
+
+Both of these two types of numbers significantly differ in how they are stored in memory and the range of acceptable values. Furthermore, the characteristic of a number which determines its kind, range and application is called a **type**.
+
+`int`s are represented almost the same way you're used to writing in paper - it;s simply a **string of digits** that make up the number. But there's a reservation - you must not insert any characters that are not digits inside the number. Take for example the number **eleven million on hundred and eleven thousand one hundred and eleven**. If you took a pencil and wrote it, it would look like this `11,111,111` or `11.111.111`. But in `C` it must be written like this: `11111111`. Otherwise you'd expose yourself to some bitting remarks from the compiler.
+
+To write negative numbers you add a `-` symbol at the front of it, a usual: `-11111111`. Positive numbers do not require a `+` symbol at the front, but you may put it, if you like.
+
+There are two additional conventions, unknown to the world of mathematics:
+
+* **Octal Representation**: `int`s are octal if preceded by the `0` digit. This means that the number must contain digits taken from the `[0...7]` range only. For example: `0123` is an octal number with a decimal value equal to `83`.
+
+* **Hexadecimal Representation**: `int`s are hexadecimal if they're preceded by an `0x`. As such, `0x123` is a hexadecimal representation with a decimal value equal to `291`.
+
+To print an integer number, you should use (for a simple format):
+
+```C
+printf("%d\n", IntegerNumberOrExpression);
+```
+
+To print a floating-point number, you should use (for a simple format):
+
+```C
+printf("%f\n", FloatNumberOrExpression);
+```
+
+In both cases, you should first include the `stdio.h` header file.
+</div>
+
+#### Variables
+
+<div style="text-align: justify">
+
+##### Names
+
+A **variable** is a **container** for values that may be changed in value. Variables have rules regarding their naming:
+
+* The name of the variable must be composed of **upper-case** or **lower-case** **Lating letters, digits and the underscore character** `_`;
+* The name of the variable **MUST** begin with a letter;
+* The underscore character is considered a letter;
+* Upper and lower-case letters are treated as **different**. Which means that it is **case-sensitive**;
+* The same restriction apply to **FUNCTION NAMES**;
+* The restriction on the variable name length is **compiler-based**, but usually you'd want to avoid long names.
+
+
+##### Types
+
+The `C` language is a statically-typed language, which means that variables have a type, such as `int` and `float` and the variables may only store these kind of values. It is not possible to change it mid-execution or assign a `float` value to an `int` variable or vice-versa.
+
+
+##### Creating a variable
+
+A variable comes into existence as a result of a **declaration**. A declaration is a syntatic structure that binds a name, provided by the programmer, to a specific type offered by the `C` language. The construction of the declaration, in other words, the declaration syntax, is simple: just use the name of the desired type, then the variable name or names separated by commas if there are more than one. The whole statement ends with a semicolon.
+
+
+</div>
+
+#### Comments in C
+
+
+<div style="text-align: justify">
+
+The developer may want to put in a few words addressed not to the compiler but to humans, usually to **explain** to other readers of the code how the tricks used in the code work, or the meanings of variables and functions and evetually, in order to keep stored information on who the author is and when the program was written.
+
+Good an responsible developrs describe each function; in particular, they explain the role of the parameters, the value the function returns as a result and what the function actually does.
+
+To leave these traces in the program in a way that the compiler won't interpret as part of the code we use what is called *comments*. Whenever the compiler encouters a comment in your program, the comment is completely transparent to it.
+
+In the `C` language a comment is a text that begins with a pair of characters:
+
+```C
+/*
+```
+
+and ends with the pair of characters:
+
+```C
+*/
+```
+
+The comment can span several lines or it can occupy a single line or only a part of it. As an example:
+
+```C
+/* Counter variable counts the number of sheep in the meadow */
+int Counter;
+```
+
+Any developer reading the program will be aware of the true meaning of the variable `Counter`. The developer will read the code faster and it will take less time to understand it.
+
+Developers often place a note at the beginning of the source informing us of when they wrote the program, and who amended it and why. The note may appear like this:
+
+```C
+/*************************************************
+Counting sheep version 1.0
+Author: Ronald Sleepyhead, 2012
+email: rs@insomnia.org
+
+Changes:
+2012-09-13: Ginny Drowsy: counting black sheep improved
+*************************************************/
+```
+
+Despite the complicated structure and the multitude of stars, the condition saying how the comment should be started and finished is fully met.
+
+Comments may also be used to render some part of a code that is currently not needed, for whateer reason. We often do this during the testing of a program in order to isolate the place where an error might be hidden.
+
+</div>
+
 ### Module 2
+
+
 
 ### Module 3
 
