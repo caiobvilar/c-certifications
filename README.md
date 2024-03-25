@@ -2,6 +2,41 @@
 
 ![Alt](https://repobeats.axiom.co/api/embed/c613bf726b2ddfd69e68b9a5606676b0dc0acfd3.svg "Repobeats analytics image")
 
+<!--toc:start-->
+- [EDUBE C Programming Language Professional Certificate](#edube-c-programming-language-professional-certificate)
+  - [C Essentials - Part 1 (Basics)](#c-essentials-part-1-basics)
+    - [Module 1](#module-1)
+      - [Compilation](#compilation)
+      - [Your First Program](#your-first-program)
+        - [Output](#output)
+      - [LAB 1.1 - What is your name?](#lab-11-what-is-your-name)
+        - [Level of difficulty](#level-of-difficulty)
+        - [Objectives](#objectives)
+        - [Scenario](#scenario)
+        - [Solution](#solution)
+      - [LAB 1.2 - Just Numbers - Part 1](#lab-12-just-numbers-part-1)
+        - [Level of difficulty](#level-of-difficulty)
+        - [Objectives](#objectives)
+        - [Scenario](#scenario)
+        - [Expected output](#expected-output)
+        - [Solution](#solution)
+      - [Numbers and how the computers see them](#numbers-and-how-the-computers-see-them)
+      - [Variables](#variables)
+        - [Names](#names)
+        - [Types](#types)
+        - [Creating a variable](#creating-a-variable)
+      - [Comments in C](#comments-in-c)
+    - [Module 2](#module-2)
+      - [Floating-point Numbers](#floating-point-numbers)
+      - [Scientific Notation](#scientific-notation)
+      - [Operators](#operators)
+    - [Module 3](#module-3)
+    - [Module 4](#module-4)
+    - [Module 5](#module-5)
+    - [Part 1 Test](#part-1-test)
+  - [C Essentials - Part 2 (Intermediate)](#c-essentials-part-2-intermediate)
+  - [C Advanced](#c-advanced)
+<!--toc:end-->
 ## C Essentials - Part 1 (Basics)
 
 <div style="text-align: justify">
@@ -48,15 +83,15 @@ Now we’d like to show you a very simple (and completely useless) program writt
 First, we define our expectations for the program. They’ll be very modest. We want a short and rather meaningless text to appear on the screen. Let's assume that the text should proclaim to the world:
 It's me, your first program.
 
-output
+##### Output
 
 We don't expect anything more from it so far.
 
 What further steps should our first program perform? Let's try to enumerate them here:
 
-* to start;
-* to write the text on the screen;
-* to stop
+- to start;
+- to write the text on the screen;
+- to stop
 
 This sort of structured and semi-formal description of each step of the program is called an algorithm. The sources of this word can be traced back to the Arabic language, and it originated in early medieval times, which may be the pretext to note that the beginnings of computer programming lie in very ancient times.
 
@@ -71,7 +106,7 @@ Let's start.
 
 int main(void)
 {
-	puts("It's me, your first program.");
+ puts("It's me, your first program.");
     return 0;
 }
 ```
@@ -88,12 +123,12 @@ You might also ask where the `stdio.h` file is located. The answer is simple but
 
 Every function in “C” begins with the following set of information:
 
-* what is the **result** of the function?
-* what is the **name** of the function?
-* how many **parameters** does the function have and what are their names?
-* the **result** of the function is an **integer** value (we read it from the word `int` which is short for **integer**)
-* the **name** of the function is `main` (we know why already)
-* the function doesn't require any **parameters** (which we read from the word `void`)
+- What is the **result** of the function?
+- What is the **name** of the function?
+- How many **parameters** does the function have and what are their names?
+- The **result** of the function is an **integer** value (we read it from the word `int` which is short for **integer**)
+- the **name** of the function is `main` (we know why already)
+- the function doesn't require any **parameters** (which we read from the word `void`)
 
 A set of information like this is sometimes called a `prototype`, and it’s like a label affixed to a function, announcing how we can use that function in your program. The prototype says nothing about what the function is intended for. It’s written inside the function and the interior of the function is called the **function body**. The function body begins where the first opening bracket `{` is placed and ends where the corresponding closing bracket `}` is placed. It might sound surprising, but the function body can be empty – this just means that the function does nothing.
 
@@ -103,7 +138,7 @@ We can even imagine a function that is lazy – it would be encoded like this:
 void lazy(void) { }
 ```
 
-This drone provides no result (the first `void`), its name is `lazy`, it doesn't take any parameters (the second `void`) and it does absolutely nothing (the blank space between the brackets). 
+This drone provides no result (the first `void`), its name is `lazy`, it doesn't take any parameters (the second `void`) and it does absolutely nothing (the blank space between the brackets).
 
 Inside the main function body we should write what our function (and thus the program) is supposed to do. We look inside and find a reference to a block called `puts`. This is what we call a **function invocation**. Now let’s consider a few important details.
 
@@ -136,9 +171,9 @@ it would mean that something had gone wrong, it didn’t allow your program to b
 
 Is that all? Yes! Let's look again at our program and see what’s happening step by step:
 
-* we introduce the function `main` into our program – it’ll be executed when you start the program;
-* we invoke the function `puts` inside the main function – it’ll print the text on the screen;
-* the program finishes immediately after printing, indicating that everything you expected to achieve has been achieved.
+- we introduce the function `main` into our program – it’ll be executed when you start the program;
+- we invoke the function `puts` inside the main function – it’ll print the text on the screen;
+- the program finishes immediately after printing, indicating that everything you expected to achieve has been achieved.
 
 </div>
 
@@ -152,9 +187,9 @@ Very Easy
 
 Familiarize the student with:
 
-* Writing a first program
-* Printing on screen
-* The main function
+- Writing a first program
+- Printing on screen
+- The main function
 
 ##### Scenario
 
@@ -169,12 +204,14 @@ Write your first program in the "C" language. Just print your name 3 times. Reme
 ##### Level of difficulty
 
 Easy
+
 ##### Objectives
 
 Familiarize the student with:
-* Fixing errors in a program
-* Integer numbers
-* Printing on screen
+
+- Fixing errors in a program
+- Integer numbers
+- Printing on screen
 
 ##### Scenario
 
@@ -196,8 +233,8 @@ Your version of the program must print the same result as the expected output. B
 
 The numbers handled by modern computers are of two types:
 
-* `integers (int)`: those which are devoid of a fractional part;
-* `floating-point (float)`: also known as `floats`, are numbers that contain a fractional part.
+- `integers (int)`: those which are devoid of a fractional part;
+- `floating-point (float)`: also known as `floats`, are numbers that contain a fractional part.
 
 Both of these two types of numbers significantly differ in how they are stored in memory and the range of acceptable values. Furthermore, the characteristic of a number which determines its kind, range and application is called a **type**.
 
@@ -207,9 +244,9 @@ To write negative numbers you add a `-` symbol at the front of it, a usual: `-11
 
 There are two additional conventions, unknown to the world of mathematics:
 
-* **Octal Representation**: `int`s are octal if preceded by the `0` digit. This means that the number must contain digits taken from the `[0...7]` range only. For example: `0123` is an octal number with a decimal value equal to `83`.
+- **Octal Representation**: `int`s are octal if preceded by the `0` digit. This means that the number must contain digits taken from the `[0...7]` range only. For example: `0123` is an octal number with a decimal value equal to `83`.
 
-* **Hexadecimal Representation**: `int`s are hexadecimal if they're preceded by an `0x`. As such, `0x123` is a hexadecimal representation with a decimal value equal to `291`.
+- **Hexadecimal Representation**: `int`s are hexadecimal if they're preceded by an `0x`. As such, `0x123` is a hexadecimal representation with a decimal value equal to `291`.
 
 To print an integer number, you should use (for a simple format):
 
@@ -224,6 +261,7 @@ printf("%f\n", FloatNumberOrExpression);
 ```
 
 In both cases, you should first include the `stdio.h` header file.
+
 </div>
 
 #### Variables
@@ -234,28 +272,24 @@ In both cases, you should first include the `stdio.h` header file.
 
 A **variable** is a **container** for values that may be changed in value. Variables have rules regarding their naming:
 
-* The name of the variable must be composed of **upper-case** or **lower-case** **Lating letters, digits and the underscore character** `_`;
-* The name of the variable **MUST** begin with a letter;
-* The underscore character is considered a letter;
-* Upper and lower-case letters are treated as **different**. Which means that it is **case-sensitive**;
-* The same restriction apply to **FUNCTION NAMES**;
-* The restriction on the variable name length is **compiler-based**, but usually you'd want to avoid long names.
-
+- The name of the variable must be composed of **upper-case** or **lower-case** **Lating letters, digits and the underscore character** `_`;
+- The name of the variable **MUST** begin with a letter;
+- The underscore character is considered a letter;
+- Upper and lower-case letters are treated as **different**. Which means that it is **case-sensitive**;
+- The same restriction apply to **FUNCTION NAMES**;
+- The restriction on the variable name length is **compiler-based**, but usually you'd want to avoid long names.
 
 ##### Types
 
 The `C` language is a statically-typed language, which means that variables have a type, such as `int` and `float` and the variables may only store these kind of values. It is not possible to change it mid-execution or assign a `float` value to an `int` variable or vice-versa.
 
-
 ##### Creating a variable
 
 A variable comes into existence as a result of a **declaration**. A declaration is a syntatic structure that binds a name, provided by the programmer, to a specific type offered by the `C` language. The construction of the declaration, in other words, the declaration syntax, is simple: just use the name of the desired type, then the variable name or names separated by commas if there are more than one. The whole statement ends with a semicolon.
 
-
 </div>
 
 #### Comments in C
-
 
 <div style="text-align: justify">
 
@@ -263,7 +297,7 @@ The developer may want to put in a few words addressed not to the compiler but t
 
 Good an responsible developrs describe each function; in particular, they explain the role of the parameters, the value the function returns as a result and what the function actually does.
 
-To leave these traces in the program in a way that the compiler won't interpret as part of the code we use what is called *comments*. Whenever the compiler encouters a comment in your program, the comment is completely transparent to it.
+To leave these traces in the program in a way that the compiler won't interpret as part of the code we use what is called _comments_. Whenever the compiler encouters a comment in your program, the comment is completely transparent to it.
 
 In the `C` language a comment is a text that begins with a pair of characters:
 
@@ -307,7 +341,43 @@ Comments may also be used to render some part of a code that is currently not ne
 
 ### Module 2
 
+#### Floating-point Numbers
 
+Numbers that have a fractional part, such as `0.4`. As a side note, you can omit zero when it's the only digit in front of or after the decimal point. In essence, you can write `0.4` as `.4` and it works flawlessly.
+
+```C
+4
+4.0
+```
+
+Those numbers above may look exactly the same to you, but the `C` Compiler sees them as two completely different values.
+
+- `4` is an `int` and it represented an integer, a whole number;
+- `4.0` is a `double`, which means it represents double-precision floating-point number, they have fifteen decimal digits of precision and can be easily assigned to `float`s (single-precision floating-point numbers which have six decimal digits of precision);
+- We can say that the **point makes a double**. Do not forget that.
+
+#### Scientific Notation
+
+Say you want to represent gigantic numbers, such as the speed of light. To avoid tediously writing so many zeroes you may use the scientific notation, such as `3*10^8`. In C this is represented as
+
+```C
+3E8
+```
+
+The letter `E` (which you can also use the lower-case version, `e`, comes from the word _exponent_) is a concise version of the phrase "times ten to the power of". Take note that:
+
+- The exponent (value after `E`) **must** be an integer;
+- The base (value in front of `E`) **can** be an integer.:w
+
+To represent numbers that are very small you may use `E-N`, be it N an integer. For example, the **Planck's Constant** is represented as
+
+```C
+6.62607E-34
+```
+
+#### Operators
+
+An
 
 ### Module 3
 
@@ -322,7 +392,6 @@ Comments may also be used to render some part of a code that is currently not ne
 <div style="text-align: justify">
 
 </div>
-
 
 ## C Advanced
 
