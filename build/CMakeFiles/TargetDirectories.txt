@@ -1,3 +1,5 @@
-/workspaces/nuttx-ddrivers/build/CMakeFiles/rebuild_cache.dir
-/workspaces/nuttx-ddrivers/build/CMakeFiles/edit_cache.dir
-/workspaces/nuttx-ddrivers/build/CMakeFiles/Dummy.dir
+/workspaces/c-certifications/build/CMakeFiles/edit_cache.dir
+/workspaces/c-certifications/build/CMakeFiles/lab1-1.dir
+/workspaces/c-certifications/build/CMakeFiles/rebuild_cache.dir
+/workspaces/c-certifications/build/CMakeFiles/lab1-2.dir
+/workspaces/c-certifications/build/CMakeFiles/C-Certificate.dir

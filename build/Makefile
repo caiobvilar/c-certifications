@@ -130,17 +130,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab1
+# Target rules for targets named lab1-1
 
 # Build rule for target.
-lab1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab1
-.PHONY : lab1
+lab1-1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab1-1
+.PHONY : lab1-1
 
 # fast build rule for target.
-lab1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-.PHONY : lab1/fast
+lab1-1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-1.dir/build.make CMakeFiles/lab1-1.dir/build
+.PHONY : lab1-1/fast
+
+#=============================================================================
+# Target rules for targets named lab1-2
+
+# Build rule for target.
+lab1-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab1-2
+.PHONY : lab1-2
+
+# fast build rule for target.
+lab1-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-2.dir/build.make CMakeFiles/lab1-2.dir/build
+.PHONY : lab1-2/fast
 
 #=============================================================================
 # Target rules for targets named C-Certificate
@@ -161,7 +174,7 @@ src/C1/src/c1-1.o: src/C1/src/c1-1.c.o
 
 # target to build an object file
 src/C1/src/c1-1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/C1/src/c1-1.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-1.dir/build.make CMakeFiles/lab1-1.dir/src/C1/src/c1-1.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C-Certificate.dir/build.make CMakeFiles/C-Certificate.dir/src/C1/src/c1-1.c.o
 .PHONY : src/C1/src/c1-1.c.o
 
@@ -171,7 +184,7 @@ src/C1/src/c1-1.i: src/C1/src/c1-1.c.i
 
 # target to preprocess a source file
 src/C1/src/c1-1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/C1/src/c1-1.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-1.dir/build.make CMakeFiles/lab1-1.dir/src/C1/src/c1-1.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C-Certificate.dir/build.make CMakeFiles/C-Certificate.dir/src/C1/src/c1-1.c.i
 .PHONY : src/C1/src/c1-1.c.i
 
@@ -181,9 +194,36 @@ src/C1/src/c1-1.s: src/C1/src/c1-1.c.s
 
 # target to generate assembly for a file
 src/C1/src/c1-1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/C1/src/c1-1.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-1.dir/build.make CMakeFiles/lab1-1.dir/src/C1/src/c1-1.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C-Certificate.dir/build.make CMakeFiles/C-Certificate.dir/src/C1/src/c1-1.c.s
 .PHONY : src/C1/src/c1-1.c.s
+
+src/C1/src/c1-2.o: src/C1/src/c1-2.c.o
+
+.PHONY : src/C1/src/c1-2.o
+
+# target to build an object file
+src/C1/src/c1-2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-2.dir/build.make CMakeFiles/lab1-2.dir/src/C1/src/c1-2.c.o
+.PHONY : src/C1/src/c1-2.c.o
+
+src/C1/src/c1-2.i: src/C1/src/c1-2.c.i
+
+.PHONY : src/C1/src/c1-2.i
+
+# target to preprocess a source file
+src/C1/src/c1-2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-2.dir/build.make CMakeFiles/lab1-2.dir/src/C1/src/c1-2.c.i
+.PHONY : src/C1/src/c1-2.c.i
+
+src/C1/src/c1-2.s: src/C1/src/c1-2.c.s
+
+.PHONY : src/C1/src/c1-2.s
+
+# target to generate assembly for a file
+src/C1/src/c1-2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1-2.dir/build.make CMakeFiles/lab1-2.dir/src/C1/src/c1-2.c.s
+.PHONY : src/C1/src/c1-2.c.s
 
 # Help Target
 help:
@@ -194,10 +234,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... C-Certificate"
-	@echo "... lab1"
+	@echo "... lab1-1"
+	@echo "... lab1-2"
 	@echo "... src/C1/src/c1-1.o"
 	@echo "... src/C1/src/c1-1.i"
 	@echo "... src/C1/src/c1-1.s"
+	@echo "... src/C1/src/c1-2.o"
+	@echo "... src/C1/src/c1-2.i"
+	@echo "... src/C1/src/c1-2.s"
 .PHONY : help
 
 
